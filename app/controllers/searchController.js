@@ -4,7 +4,7 @@ var student = require("../services/studentService.js");
 
 async function getStudents(filters){
 
-  return await student.search();
+  return await student.search(filters);
 
 }
 

@@ -6,7 +6,7 @@ var router = express.Router();
 router.get('/students', async function(req, res) {
   try{
 
-    var val =  await students.getStudents(req.parameters);
+    var val =  await students.getStudents(req.query);
 
     console.log(val);
     res.send(val, 200);
